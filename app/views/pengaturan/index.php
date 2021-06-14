@@ -73,7 +73,7 @@
                                 <img src="<?= BASEURL ?>app/models/cover/<?= $data['user']['cover'] ?>" alt="" width="100%" height="200px">
                             </div>
                             <div>
-                                <p>Upload cover profil anda untuk menambah nilai kepercayaan pembeli</p>
+                                <p>Upload cover profil anda untuk menambah nilai keindahan profil anda</p>
                             </div>
                             <div class="input-group">
                                 <div class="custom-file">
