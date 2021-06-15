@@ -1,10 +1,10 @@
 <div class="container">
     <div class="card">
         <h5 class="card-header">
-            Tambah librariku
+            Tambah Buku
         </h5>
         <ul class="list-group list-group-flush">
-            <form action="<?= BASEURL ?>librariku/tambahlibrariku" enctype="multipart/form-data" method="post">
+            <form action="<?= BASEURL ?>librariku/tambahLibrariku" enctype="multipart/form-data" method="post">
                 <li class="list-group-item">
 
                     <div class="form-row">
@@ -31,8 +31,8 @@
                             <input type="number" class="form-control" name="harga" placeholder="harga" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="deskripsi">Stok (Jumlah)</label>
-                            <input type="number" class="form-control" name="stok" placeholder="stok" required>
+                            <label for="deskripsi">Jumlah</label>
+                            <input type="number" class="form-control" name="jumlah" placeholder="jumlah" required>
                         </div>
                     </div>
                     <div>

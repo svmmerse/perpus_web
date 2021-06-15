@@ -2,18 +2,18 @@
     <div class="card">
         <h5 class="card-header">Profil</h5>
         <div class="card-body">
-            <div class="mb-3" style="width: 100%; height: 200px; background:url('<?= BASEURL ?>assets/img/picture/abstract-green-wallpapers-hd-desktop-and-mobile-backgrounds.jpg'); background-size: 100% 200px">
-                <img src="<?= BASEURL ?>app/models/cover/<?= $data['pengguna']['cover'] ?>" alt="" width="100%" height="100%">
+            <div class="mb-3" style="width: 100%; height: 200px; background:url('<?= BASEURL ?>assets/img/picture/cover.jpg'); background-size: 100% 200px">
+                <img src="<?= BASEURL ?>app/models/cover/<?= $data['penginput']['cover'] ?>" alt="" width="100%" height="100%">
             </div>
             <div class="float-left mr-3 rounded-circle">
-                <img class=" rounded-circle" src="<?= $data['pengguna']['foto'] ?  BASEURL . 'app/models/foto/' . $data['pengguna']['foto'] : BASEURL . 'assets/img/icon/noavatar.png' ?>" alt="Foto Profil" width="100px" style="max-height: 130px; object-fit: cover;">
+                <img class=" rounded-circle" src="<?= $data['penginput']['foto'] ?  BASEURL . 'app/models/foto/' . $data['penginput']['foto'] : BASEURL . 'assets/img/icon/noavatar.png' ?>" alt="Foto Profil" width="100px" style="max-height: 130px; object-fit: cover;">
             </div>
-            <h5 class="card-title "><?= $data['pengguna']['nama'] ?></h5>
-            Email : <?= $data['pengguna']['email'] ?> <br>
-            Nomor : <?= $data['pengguna']['nomor_telepon'] ?> <br>
+            <h5 class="card-title "><?= $data['penginput']['nama'] ?></h5>
+            Email : <?= $data['penginput']['email'] ?> <br>
+            Nomor : <?= $data['penginput']['nomor_telepon'] ?> <br>
             <p class="card-text text-muted">
-                Member sejak <?= $data['pengguna']['created_at'] ?> <br>
-                Terakhir masuk <?= $data['pengguna']['updated_at'] ?>
+                Member sejak <?= $data['penginput']['created_at'] ?> <br>
+                Terakhir masuk <?= $data['penginput']['updated_at'] ?>
             </p>
         </div>
     </div>

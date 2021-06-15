@@ -1,5 +1,5 @@
 <?php
-class Home extends Controller
+class home extends Controller
 {
     public function index()
     {
@@ -11,7 +11,7 @@ class Home extends Controller
             $this->view('templates/header', $data);
             $this->view('home/index');
             $this->view('templates/footer');
-        } else {
+        }else {
             $data['judul'] = 'Perpustakaan UNEJ | Librarin';
             $this->view('templates/header', $data);
             $this->view('home/index');
@@ -26,19 +26,19 @@ class Home extends Controller
             $_SESSION['id'] = $data['user']['id'];
             if ($this->model('User_model')->updatedAt($data['user']['id']) > 0) {
                 header('Location: ' . BASEURL);
-            } else {
+            }else {
                 Flasher::setFlash('Gagal', 'Masuk', 'danger');
                 header('Location: ' . BASEURL . '/home');
                 exit;
             }
-        } else {
+        }else {
             Flasher::setFlash('Gagal', 'Masuk', 'danger');
             header('Location: ' . BASEURL . '/home');
             exit;
         }
     }
 
-    public function pendaftaran() #untuk fungsi pendaftaraan akun baru
+    public function pendaftaran()
     {
         $data['judul'] = 'Perpustakaan UNEJ | Librarin';
         $this->view('templates/header', $data);
@@ -46,26 +46,26 @@ class Home extends Controller
         $this->view('templates/footer');
     }
 
-    public function keluar() #untuk fungsi keluar dari akun
+    public function keluar()
     {
         session_destroy();
         header('Location: ' . BASEURL);
         exit;
     }
 
-    public function daftar() #untuk cek berhasil tidaknya dari from akun
+    public function daftar()
     {
         if ($_POST['password'] == $_POST['cpassword']) {
             if ($this->model('User_model')->daftar($_POST, $_FILES) > 0) {
                 Flasher::setFlash('Berhasil', 'Daftar', 'success');
                 header('Location: ' . BASEURL);
                 exit;
-            } else {
+            }else {
                 Flasher::setFlash('Gagal', 'Daftar', 'danger');
                 header('Location: ' . BASEURL);
                 exit;
             }
-        } else {
+        }else {
             Flasher::setFlash('Gagal', 'Daftar', 'danger');
             header('Location: ' . BASEURL);
             exit;
@@ -78,7 +78,7 @@ class Home extends Controller
             Flasher::setFlash('Berhasil', 'Silahkan Cek Email', 'success');
             header('Location: ' . BASEURL);
             exit;
-        } else {
+        }else {
             Flasher::setFlash('Gagal', 'Anda Bukan User', 'danger');
             header('Location: ' . BASEURL);
             exit;

@@ -1,10 +1,10 @@
 <div class="container">
     <div class="card">
         <h5 class="card-header">
-            Ubah librariku
+            Ubah Buku
         </h5>
         <ul class="list-group list-group-flush">
-            <form action="<?= BASEURL ?>librariku/ubahlibrariku/<?= $data['librariku']['id'] ?>" method="post">
+            <form action="<?= BASEURL ?>librariku/ubahLibrariku/<?= $data['librariku']['id'] ?>" method="post">
                 <li class="list-group-item">
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -31,8 +31,8 @@
                             <input type="number" class="form-control" name="harga" placeholder="harga" value="<?= $data['librariku']['harga'] ?>" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="deskripsi">Stok (Jumlah)</label>
-                            <input type="number" class="form-control" name="stok" placeholder="stok" value="<?= $data['librariku']['stok'] ?>" required>
+                            <label for="deskripsi">Jumlah</label>
+                            <input type="number" class="form-control" name="jumlah" placeholder="jumlah" value="<?= $data['librariku']['jumlah'] ?>" required>
                         </div>
                     </div>
                 </li>

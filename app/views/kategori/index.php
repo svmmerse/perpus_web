@@ -4,12 +4,12 @@
             Nama - Nama Buku
         </h5>
         <ul class="list-group list-group-flush">
-            <?php if (!$data['hasil_panen']) { ?>
+            <?php if (!$data['hasil_buku']) { ?>
                 <li class="list-group-item">
                     Kosong
                 </li>
             <?php } else {
-            foreach ($data['hasil_panen'] as $librariku) : ?>
+            foreach ($data['hasil_buku'] as $librariku) : ?>
                 <li class="list-group-item ">
                     <a class="card-link" href="<?= BASEURL ?>librariku/detail/<?= $librariku['id']; ?>">
                         <div class="row">

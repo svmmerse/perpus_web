@@ -1,8 +1,7 @@
 <div class="container">
     <div class="card">
         <h5 class="card-header">
-            <!-- Librariku  -->
-            Libraryku
+            Galeri
             <a href="<?= BASEURL ?>librariku/tambah" class="btn btn-primary btn-sm float-right">Tambah</a>
         </h5>
         <ul class="list-group list-group-flush">

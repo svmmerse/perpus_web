@@ -1,7 +1,7 @@
 <div class="container">
     <div class="card">
         <h5 class="card-header">
-            librariku
+            Buku - Buku
             <a href="<?= BASEURL ?>librariku/tambah" class="btn btn-primary btn-sm float-right">Tambah</a>
         </h5>
         <ul class="list-group list-group-flush">
@@ -9,7 +9,7 @@
                 <form id="cari" action="<?= BASEURL ?>librariku/cari" class="input-group p-2" method="POST">
                     <input type="text" name="cari" class="form-control" placeholder="Cari Buku-buku" aria-label="cari" aria-describedby="cari" required>
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="submit" id="cari">Cari</button>
+                        <button class="btn btn-outline-secondary" type="submit" id="cari">Pencarian</button>
                     </div>
                 </form>
             </li>

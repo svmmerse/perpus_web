@@ -21,7 +21,7 @@ class Flasher
                     </a>
 					<div class='dropdown-menu dropdown-menu-right mt-2' aria-labelledby='akun'>
                         <a class='dropdown-item' href='$profil'>Profil</a>
-                        <a class='dropdown-item' href='$librariku'>Bukuku</a>
+                        <a class='dropdown-item' href='$librariku'>Galeri</a>
                         <a class='dropdown-item' href='$pengaturan'>Pengaturan</a>
                         <div class='dropdown-divider'></div>
 						<a class='dropdown-item' href='$keluar'>Keluar</a>
