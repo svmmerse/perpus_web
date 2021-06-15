@@ -14,7 +14,7 @@ class kategori extends Controller
             $this->view('templates/header', $data);
             $this->view('kategori/index', $data);
             $this->view('templates/footer');
-        }else {
+        } else {
             $data['judul'] = 'Perpustakaan UNEJ | Librarin ';
             $data['hasil_buku'] = $this->model('Barang_model')->cari($_POST);
             $this->view('templates/header', $data);
@@ -34,7 +34,7 @@ class kategori extends Controller
             $this->view('templates/header', $data);
             $this->view('kategori/index', $data);
             $this->view('templates/footer');
-        }else {
+        } else {
             $data['judul'] = 'Perpustakaan UNEJ | Librarin ';
             $data['hasil_buku'] = $this->model('Barang_model')->getIlmiah();
             $this->view('templates/header', $data);
@@ -54,7 +54,7 @@ class kategori extends Controller
             $this->view('templates/header', $data);
             $this->view('kategori/index', $data);
             $this->view('templates/footer');
-        }else {
+        } else {
             $data['judul'] = 'Perpustakaan UNEJ | Librarin ';
             $data['hasil_buku'] = $this->model('Barang_model')->getAsing();
             $this->view('templates/header', $data);
@@ -74,7 +74,7 @@ class kategori extends Controller
             $this->view('templates/header', $data);
             $this->view('kategori/index', $data);
             $this->view('templates/footer');
-        }else {
+        } else {
             $data['judul'] = 'Perpustakaan UNEJ | Librarin ';
             $data['hasil_buku'] = $this->model('Barang_model')->getCampuran();
             $this->view('templates/header', $data);

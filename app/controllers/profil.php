@@ -35,13 +35,13 @@ class profil extends Controller
                 $data['user'] = $this->model('User_model')->getUserByid($_SESSION['id']);
                 $_SESSION['username'] = $data['user']['username'];
                 $_SESSION['foto'] = $data['user']['foto'];
-                $data['penginput']['created_at'] = $this->tgl_indo($data['pengguna']['created_at']);
+                $data['penginput']['created_at'] = $this->tgl_indo($data['penginput']['created_at']);
                 $this->view('templates/header', $data);
                 $this->view('profil/user', $data);
                 $this->view('templates/footer');
             } else {
                 $data['judul'] = 'Perpustakaan UNEJ | Librarin';
-                $data['pengguna']['created_at'] = $this->tgl_indo($data['pengguna']['created_at']);
+                $data['penginput']['created_at'] = $this->tgl_indo($data['penginput']['created_at']);
                 $this->view('templates/header', $data);
                 $this->view('profil/user', $data);
                 $this->view('templates/footer');
