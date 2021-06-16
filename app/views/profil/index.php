@@ -45,7 +45,7 @@
                                     <p class="text-body"><?= $librariku['deskripsi']; ?></p>
                                 </div>
                                 <div class="col-md-3 d-flex align-items-end flex-column">
-                                    <p class="text-muted">Rp. <?= $librariku['harga']; ?>/Kg</p>
+                                    <p class="text-muted">Rp. <?= $librariku['harga']; ?></p>
                                     <p class="text-muted small mt-auto">
                                         Ditambahkan sejak <?= $librariku['created_at']; ?> <br>
                                     </p>

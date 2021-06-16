@@ -27,7 +27,7 @@
                                 <div class="">
                                     <h5 class="text-body"><?= $librariku['nama']; ?></h5>
                                     <p class="text-muted small">Ditambahkan sejak <?= $librariku['created_at']; ?> </p>
-                                    <p class="text-muted">Rp. <?= $librariku['harga']; ?>/Kg</p>
+                                    <p class="text-muted">Rp. <?= $librariku['harga']; ?></p>
                                     <p class="text-body"><?= $librariku['deskripsi']; ?></p>
                                 </div>
                             </a>
