@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Jun 2021 pada 14.36
+-- Waktu pembuatan: 16 Jun 2021 pada 14.48
 -- Versi server: 10.4.19-MariaDB
 -- Versi PHP: 7.3.28
 
@@ -49,7 +49,12 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`id`, `id_user`, `id_kategori`, `nama`, `harga`, `jumlah`, `deskripsi`, `created_at`, `foto1`, `foto2`, `foto3`, `foto4`, `foto5`, `foto6`) VALUES
-(1, 1, 1, 'Buku Ilmiah1', 50000, 12, 'ini buku ilmiah', '2016-06-10', 'img1.jpeg', '', '', '', '', '');
+(1, 1, 1, 'Buku Ilmiah1', 50000, 12, 'ini buku ilmiah', '2016-06-10', 'img1.jpeg', '', '', '', '', ''),
+(2, 2, 2, 'Buku Asing 1', 70000, 1, 'ini buku asing', '2016-06-10', 'img6.jpeg', '', '', '', '', ''),
+(3, 2, 3, 'Buku Campuran 1', 64000, 1, 'ini buku campuran', '2016-06-10', 'img4.jpeg', '', '', '', '', ''),
+(4, 2, 3, 'Buku Campuran 2', 63000, 4, 'ini buku campuran', '2018-06-08', 'img5.jpeg', '', '', '', '', ''),
+(5, 2, 2, 'Buku Asing 2', 40000, 3, 'ini buku asing', '2016-06-10', 'img3.jpeg', '', '', '', '', ''),
+(6, 1, 1, 'Buku Ilmiah 2', 55000, 12, 'ini buku ilmiah 2', '2016-06-10', 'img5.jpeg', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
