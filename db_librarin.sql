@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Jun 2021 pada 16.28
--- Versi server: 10.4.17-MariaDB
--- Versi PHP: 8.0.0
+-- Waktu pembuatan: 16 Jun 2021 pada 14.36
+-- Versi server: 10.4.19-MariaDB
+-- Versi PHP: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,7 +33,7 @@ CREATE TABLE `barang` (
   `id_kategori` int(11) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `harga` int(11) NOT NULL,
-  `stok` double NOT NULL,
+  `jumlah` double NOT NULL,
   `deskripsi` text NOT NULL,
   `created_at` date NOT NULL,
   `foto1` text NOT NULL,
@@ -43,6 +43,13 @@ CREATE TABLE `barang` (
   `foto5` text NOT NULL,
   `foto6` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `barang`
+--
+
+INSERT INTO `barang` (`id`, `id_user`, `id_kategori`, `nama`, `harga`, `jumlah`, `deskripsi`, `created_at`, `foto1`, `foto2`, `foto3`, `foto4`, `foto5`, `foto6`) VALUES
+(1, 1, 1, 'Buku Ilmiah1', 50000, 12, 'ini buku ilmiah', '2016-06-10', 'img1.jpeg', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -54,6 +61,15 @@ CREATE TABLE `kategori` (
   `id` int(11) NOT NULL,
   `kategori` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `kategori`
+--
+
+INSERT INTO `kategori` (`id`, `kategori`) VALUES
+(1, 'Ilmiah'),
+(2, 'Asing'),
+(3, 'Campuran');
 
 -- --------------------------------------------------------
 
@@ -100,7 +116,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `id_level_user`, `nama`, `username`, `email`, `password`, `nomor_telepon`, `alamat`, `foto`, `cover`, `created_at`, `updated_at`) VALUES
-(1, 1, 'admin', 'admin', 'admin@gmail.com', 'admin123', '081331425162', 'Jember', '', '', '2021-06-14', '2021-06-14 21:25:13');
+(1, 1, 'admin', 'admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', '081331425162', 'Jember', 'gambar1.png', 'cover.jpg', '2021-06-14', '2021-06-16 14:25:58'),
+(2, 2, 'ardi', 'ardi', '', 'b623a7cebe5be1abc1409e528f6b4451', '0213144', 'Jember', 'gambar.png', 'cover.jpg', '2016-06-10', '2021-06-16 14:31:05');
 
 --
 -- Indexes for dumped tables
