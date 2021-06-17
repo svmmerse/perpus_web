@@ -19,6 +19,15 @@
             <div class="carousel-item">
                 <img class="mw-100" src="<?= BASEURL ?>assets/img/picture/img14.jpeg" alt="">
             </div>
+            <div class="carousel-item">
+                <img class="mw-100" src="<?= BASEURL ?>assets/img/picture/img15.jpeg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="mw-100" src="<?= BASEURL ?>assets/img/picture/img16.jpeg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="mw-100" src="<?= BASEURL ?>assets/img/picture/img17.jpeg" alt="">
+            </div>
         </div>
     </div>
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">

@@ -50,7 +50,7 @@
                         </a>
                     </div>
                     Harga = Rp. <?= $data['librariku']['harga'] ?> <br>
-                    Jumlah = <?= $data['librariku']['jumlah'] ?>
+                    Jumlah Pages = <?= $data['librariku']['jumlah'] ?>
                     <h5 class="mt-3">Deskripsi</h5>
                     <p><?= $data['librariku']['deskripsi'] ?></p>
                 </div>
